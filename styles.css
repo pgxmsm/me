@@ -94,27 +94,28 @@ h4{
 .content {
     /* padding:0 2.5em; */
     /* margin: 0 20px; */
+    margin-top: 5em;
     display:  flex;
     justify-content: space-between;
     height: 30em;
-    /* align-items: center; */
+    align-items: center;
     width: 100%;
 }
 .content .left {
     margin: 0 1.2em;
-    width: 50em;
+    /* width: 40em; */
     /* height: 5em; */
     /* flex-wrap: wrap; */
 }
 .content .left span {
     font-size: 2em;
-    text-align: start;
+    text-align: left;
     /* width: 4em; */
     /* height: 5em; */
 
 }
 .content .right {
-    margin: 0 0em;
+    /* margin: 0 0em; */
     width: 28em;
 }
 
@@ -208,6 +209,7 @@ color: black;
             /* align-items: center; */
             flex-direction: column;
             /* height: 545px; */
+            margin-top: 0.2em;
             height: unset;
             /* border: 2px solid red; */
             /* align-items: center; */
@@ -223,7 +225,7 @@ color: black;
         .content .left span {
             font-size: 1em;
             padding: 6px;
-            text-align: center;
+            text-align: left;
             height: unset;
         
         }
