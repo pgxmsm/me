@@ -23,8 +23,8 @@ main{
     /* background-color: rgb(219, 252, 253); */
     background-color: black;
     height: auto;
-    border-left: 1px solid rgb(243, 132, 141);
-    border-right: 1px solid rgb(243, 132, 141);
+    border-left: 1px solid rgba(252, 89, 77, 0.793);
+    border-right: 1px solid rgba(252, 89, 77, 0.793);
     width: calc(100%-2px);
     /* width: 100%; */
     
@@ -39,17 +39,19 @@ nav{
     border-bottom-left-radius: 10px;
     /* gap: 4.6em; */
     /* visibility: hidden; */
-    background-color: rgb(243, 132, 141);
+    /* background-color: rgb(243, 132, 141); */
+    background-color: rgb(255, 110, 78);
     height: 2.9em;
     width: auto;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.269) ; 
+    border-bottom: 2px solid rgba(252, 77, 77, 0.792) ; 
     
 }
 .home{
     position: fixed;
     padding: 0px 5px 0 5px;
+    /* visibility: hidden; */
     border-radius: 5px;
-    background-color: rgba(243, 132, 141, 0.62);
+    background-color: rgba(255, 110, 78, 0.498);
     /* border: 2px solid white; */
     margin: 0.32em 1.2em
 }
@@ -174,18 +176,8 @@ h4{
 
 
 
-footer{
-    background-color: rgb(132, 169, 243);
-    border-top: 2px solid rgba(0, 0, 0, 0.269);
-    transform: translateY(-20px);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    /* width: 20%; */
-    /* height: 10%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
 
 .btns a{
 text-decoration: none;
@@ -274,4 +266,20 @@ color: black;
 }
 .credit{
     color: rgb(0, 242, 255);
+}
+
+footer{
+    background-color: rgba(67, 140, 203, 0.912);
+    border-top: 2px solid rgba(0, 0, 0, 0.269);
+    /* transform: translateY(-20px); */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* width: 20%; */
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer span{
+    color: black;
 }
