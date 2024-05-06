@@ -75,11 +75,17 @@ nav a , .home a {
 .home a {
     position: fixed;
     background-color: #bc49ff5b;
-    margin: 0.43em 1.1em;
-    /* width: 2em; */
+    margin: 0.3em 0.85em;
+    /* width: 1.5em; */
     border-radius: 10px;
     
   }
+.home a img {
+  width: 2.2em;
+  height: 2.3em;
+  border-radius: 10px;
+}
+
 nav a:active,
 .home a:active {
   /* background-color: #ffee0051; */
@@ -96,10 +102,7 @@ nav a img {
   width: 1.9em;
   height: 2em;
 }
-.home a img {
-  width: 1.9em;
-  height: 2em;
-}
+
 
 nav .left {
   display: flex;
@@ -338,6 +341,4 @@ footer span {
 
     
 }
-
-
 
