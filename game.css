@@ -1,0 +1,175 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 216, 216);
+    height: 80vh;
+    
+}
+
+main{
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    /* border: 4px solid red; */
+    /* height: 90vh; */
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.wel{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wel .naam {
+    border: 2px solid snow;
+    border-radius: 10px;
+    background-color: rgb(250, 174, 126);
+}
+.ex .level span{
+    margin: 1.66em;
+}
+
+.ex button{
+    padding:10px 20px;
+    font-size: 15px;
+    position: absolute;
+    margin: 3.5em 3.8em;
+    background-color: rgb(13, 209, 117);
+    border-radius: 10px;
+}
+
+.butt{
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    flex-direction: column;
+    border: 3px solid rgb(250, 188, 188);
+    background-color: rgb(255, 195, 195);
+    border-radius: 10px;
+}
+
+.butt button {
+    width: 15em;
+   
+    border-radius: 30px;
+    color: rgba(255, 0, 0, 0);
+    padding: 50px;
+}
+.butt .upper ,.butt .lower {
+    display: flex;
+    gap: 2em;
+}
+.over{
+    color: red;
+    font-size: 1.2em;
+}
+.butt .red{
+    background-color: red;
+    border: 3px solid red;
+}
+
+.butt .blue{
+    background-color: blue;
+    border: 3px solid blue;
+}
+.butt .green{
+    background-color: green;
+    border: 3px solid green;
+}
+.butt .yellow{
+    background-color: yellow;
+    border: 3px solid yellow;
+}
+.butt button:hover , .ex button:hover{
+   
+    cursor: pointer;
+    
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+
+.butt button:active{
+    /* background-color: inherit; */
+    border: 3px solid black;
+}
+
+.butt .flash{
+    background-color: rgb(246, 246, 246);
+}
+.level{
+    /* visibility: hidden; */
+    font-size: 20px;
+}
+
+
+
+.btns a {
+    text-decoration: none;
+    color: black;
+    /* background-color: #c57f23; */
+    border-radius: 6px;
+    margin: 0;
+    padding: 0;
+   height: 1.2em;
+    width: 1.2em;
+  }
+  .btns a:hover{
+      background-color: rgba(0, 0, 0, 0.153);
+  }
+  .btns {
+    /* display: flex; */
+    margin: 0 10px;
+    gap: 1.3em;
+    justify-content: center;
+    align-items: center;
+  }
+  .btns a img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+footer {
+    margin-top: 4.6em;
+    /* background-color: rgba(67, 140, 203, 0.912); */
+    background-color: #d899fde8;
+    border-top: 2px solid rgba(0, 0, 0, 0.269);
+    /* transform: translateY(-20px); */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* width: 100%; */
+    /* height: 10%; */
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer span {
+    color: black;
+  }
+
+@media (max-width: 960px) {
+
+    .butt{
+        margin-top: 5em;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+    }
+    
+    .butt button {
+        width: 4em;
+       
+        border-radius: 10px;
+        color: rgba(255, 0, 0, 0);
+        padding: 40px;
+    }
+    .butt .upper ,.butt .lower {
+        display: flex;
+        gap: 1em;
+    }
+    
+}
