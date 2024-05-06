@@ -1,13 +1,8 @@
-
-
-
-
 let comp = [];
 let userIn = [];
 let colors = ['red', 'yellow', 'green', "blue"];
 let level = 0;
-let a = 0;
-let j = 1;
+
 
 let playing = false;
 
@@ -25,13 +20,14 @@ playBtn.addEventListener('click', ()=>{
     playBtn.style.visibility = "hidden";
 });
 
+// written by @pgxMSM
 
 function flash(btn){
     btn.classList.add("flash");
     setTimeout(() => {
         btn.classList.remove("flash");
     }, 200);
-    console.log(comp)
+    // console.log(comp)
 };
 
 
@@ -40,7 +36,7 @@ function ran(){
     let randCol = colors[n];
     comp.push(randCol);
 let randBtn = document.querySelector(`.${randCol}`);
-   console.log(randBtn);
+//    console.log(randBtn);
    flash(randBtn)
 };
 
@@ -49,8 +45,7 @@ function levelup(){
     textS.innerText = `Level ${level} `;
     ran();
     userIn=[];
-    a = 0;
-    j = 1;
+    
 }
 // ran();
 
@@ -65,9 +60,10 @@ function match(idx){
     }
     else{
         let score = 0;
-        if(level>1){score=level-1}
+        if(level>1){score=level-1};
+        if(level>=1){
         console.log('game over')
-        gameOver(score);
+        gameOver(score)};
     }
 };
 
@@ -80,7 +76,7 @@ let allbtn = document.querySelectorAll(".btns");
 for( btn of allbtn){
    btn.addEventListener('click', (e)=>{
     userIn.push(e.target.innerText);
-    console.log(userIn);
+    // console.log(userIn);
    match(userIn.length-1); 
    });
 };
